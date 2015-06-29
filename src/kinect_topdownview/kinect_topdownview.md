@@ -3,7 +3,7 @@
 This small project is an example of how to write a nodelet to receive kinect pointclouds for processing
 along with how to launch the nodelet into a nodelet manager who has the kinect driver's nodelet also operating in it.
 My example nodelet subscribes to "/camera/depth/points", runs a PCL-Passthrough filter, and outputs a sensor_msgs/image
-to show a "top down" view of just a slice of kinect data points. The code is not perfect, but runs fine on bot my laptop and 
+to show a "top down" view of just a slice of kinect data points. The code is not perfect, but runs fine on my laptop and 
 the NVidia Jetson. If you run on an NVidia Jetson, you will need to use this nodelet method because using a node will bottleneck
 due to the TCP data transfer that has to happen (practically un-noticable on a laptop i7 processor).
 
@@ -21,10 +21,10 @@ To run:
   
 Dependencies:
 You need to have installed:
-1. "ros-<distro>-libpcl"? (to compile and run my processing code). I actually forget the actual pkg name. I will update this as soon as I remember or find out!
-2. ros-<distro>-rqt (to view the image in rqt)
-3. ros-<distro>-rqt-common-plugins (to view the image in rqt)
-4. ros-<distro>-freenect-launch or ros-<distro>-openni-launch
+  1. "ros-<distro>-libpcl"? (to compile and run my processing code). I actually forget the actual pkg name. I will update this as soon as I remember or find out!
+  2. ros-<distro>-rqt (to view the image in rqt)
+  3. ros-<distro>-rqt-common-plugins (to view the image in rqt)
+  4. ros-<distro>-freenect-launch or ros-<distro>-openni-launch
 
 Hopefully this is complete. If not, I'll work withyou.
 
