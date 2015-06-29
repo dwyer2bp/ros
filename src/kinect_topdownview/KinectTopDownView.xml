@@ -1,0 +1,7 @@
+<library path="lib/libKinectTopDownView">
+  <class name="kinect_proc/KinectTopDownView" type="kinect_proc::KinectTopDownView" base_class_type="nodelet::Nodelet">
+  <description>
+  This nodelet should be loaded into an already running nodelet manager for whichever kinect driver is in use (typically called camera_nodelet_manager)
+  </description>
+  </class>
+</library>

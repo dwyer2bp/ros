@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="nodelet" type="nodelet" name="KinectTopDownView" args="load kinect_proc/KinectTopDownView /camera/camera_nodelet_manager" output="screen">
+  </node>                 
+</launch>
