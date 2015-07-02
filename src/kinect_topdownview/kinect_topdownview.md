@@ -19,13 +19,14 @@ To run:
   3. Open another terminal, and run rqt by typing 'rqt'. Open up an image viewer (Plugins/Visualization/Image_View)
   4. Find and select the kinect topdown image ("/camera/kinect_topdown_img")
   
-Dependencies:
+Dependencies: (after installing ros-<distro>-ros-base, tested on ros-indigo)
 You need to have installed:
-  1. "ros-<distro>-libpcl"? (to compile and run my processing code). I actually forget the actual pkg name. I will update this as soon as I remember or find out!
+  1. ros-<distro>-libpcl-ros (to compile and run my processing code)
   2. ros-<distro>-rqt (to view the image in rqt)
   3. ros-<distro>-rqt-common-plugins (to view the image in rqt)
   4. ros-<distro>-freenect-launch or ros-<distro>-openni-launch
-
+  5. ros-<distro>-laser-geometry (I have this as a dependency in the cmakefile, so either install or remove from CMakelists.txt)
+  6. 
 Hopefully this is complete. If not, I'll work withyou.
 
 If you have any issues, you can make a post @ devtalk.nvidia.com 
